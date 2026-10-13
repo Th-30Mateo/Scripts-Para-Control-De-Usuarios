@@ -1,28 +1,27 @@
-# Scripts para Control de Usuarios
+# Sistema de Gestión de Usuarios por Consola
 
-Programa de consola desarrollado en Python para practicar la administración de registros de usuarios mediante operaciones CRUD: crear, consultar, actualizar y eliminar.
+Programa desarrollado en Python para practicar la administración de registros de usuarios mediante un menú interactivo de consola.
 
 ## Funcionalidades
 
-- Crear registros de usuarios.
-- Listar los usuarios registrados.
-- Buscar usuarios por nombre de usuario o identificador.
-- Editar información de usuarios.
-- Eliminar registros mediante confirmación.
-- Generar usuarios de ejemplo de forma aleatoria.
-- Mostrar estadísticas sencillas sobre los roles registrados.
-- Seleccionar y mostrar un usuario aleatorio.
+- Crear usuarios con nombre, apellido, edad y rol.
+- Generar un nombre de usuario a partir del nombre y apellido.
+- Asignar identificadores numéricos.
+- Listar y buscar usuarios por nombre de usuario o ID.
+- Editar datos de usuarios.
+- Eliminar usuarios con confirmación.
+- Generar registros de ejemplo aleatorios.
+- Mostrar información y estadísticas básicas.
 
-## Tecnologías y conceptos
+## Tecnologías
 
-- Python
-- Listas y diccionarios
-- Funciones
-- Validaciones y manejo de entradas
-- Menús interactivos por consola
-- Estructuras condicionales y control de flujo
+- Python 3.10 o superior.
+- Funciones, listas y diccionarios.
+- Validación de entradas.
+- Estructuras condicionales y `match`.
+- Módulo estándar `random`.
 
-## Ejecución
+## Instalación y ejecución
 
 Cloná el repositorio:
 
@@ -31,29 +30,25 @@ git clone https://github.com/Th-30Mateo/Scripts-Para-Control-De-Usuarios.git
 cd Scripts-Para-Control-De-Usuarios
 ```
 
-El archivo Python se encuentra dentro de directorios anidados. Localizá `PUNTO4.PY` y ejecutalo:
+Ejecutá el archivo principal desde la raíz del repositorio:
 
 ```bash
-python PUNTO4.PY
+python UpatecoPPA1.PY/UpatecoPPA1.PY/main.py
 ```
 
-Si utilizás Linux o WSL, podés reemplazar `python` por `python3` cuando corresponda.
+En Linux o WSL, podés utilizar `python3` en lugar de `python`.
 
-## Almacenamiento
+## Funcionamiento
 
-Los usuarios se mantienen en estructuras de datos en memoria. Los cambios no se conservan al cerrar el programa.
+El programa presenta opciones en la terminal para realizar operaciones sobre los usuarios registrados. Los registros se guardan en una lista de Python durante la ejecución.
 
-## Mejoras pendientes
+## Limitaciones conocidas
 
-- Corregir y centralizar las validaciones de entradas.
-- Gestionar correctamente los identificadores y evitar registros inconsistentes.
-- Manejar los errores al convertir valores introducidos por el usuario.
-- Evitar fallos cuando no existen usuarios registrados.
-- Mejorar la organización de los archivos y directorios.
-- Incorporar persistencia si el alcance futuro del proyecto lo requiere.
+- Los datos se pierden cuando termina el programa.
+- Las validaciones de algunas operaciones de edición y búsqueda requieren mejoras.
+- La estructura actual de directorios puede simplificarse.
+- No es una herramienta para administrar cuentas reales del sistema operativo.
 
 ## Objetivo de aprendizaje
 
-Practicar la programación estructurada, la manipulación de colecciones, las funciones y el diseño de una interfaz de consola interactiva.
-
-Este programa es un ejercicio educativo y no administra cuentas reales del sistema operativo.
+Practicar operaciones CRUD, funciones, estructuras de datos, validación de entradas y diseño de menús interactivos con Python.
